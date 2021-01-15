@@ -39,12 +39,13 @@ fieldset.selection-option {
 .banner {
     padding: 50px 0;
 }
-.bs-select-card .submit-button button{
+.bs-select-card .submit-button .button{
 width: 100%;
 background: #126784;
 color: white;
 border-radius: 10px;
 padding: 12px;
+text-align: center;
 border: none;
 }
 .product-estimated-delivery-date {
@@ -78,6 +79,9 @@ span.feature-groups-heading-title.pap-fake-h1 {
 }
 span.reduced {
     color: #b50000;
+}
+span.reduced .regular-price{
+    color: initial;
 }
 .owl-dots {
     position: absolute;
@@ -129,4 +133,103 @@ span.reduced {
 .btn-blue{
     background-color: #1781a5;
     color: #fff;
+}
+
+.dropdown-menu{
+    width: 100% !important;
+}
+.selection-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.selection-item p {
+    margin: 0;
+    color: black;
+}
+.selection-dropdown .dropdown-menu.show{
+    width: 100%;
+}
+.puzzle-wrapper {
+    position: relative;
+    height: 550px;
+    cursor: pointer;
+    z-index: 10;
+}
+/* .puzzle-wrapper::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: .3s ease;
+}
+.puzzle-wrapper:hover::after{
+    content: "";
+    background: rgba(122, 164, 255, 0.37);
+} */
+
+.puzzle-wrapper img{
+    width: 100%;
+}
+.image-main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.image-main img{
+    height: 100%;
+}
+.puzzle-shape{z-index: 100;    position: relative;}
+.puzzle-shape img{
+    width: 100%;
+    object-fit: contain;
+}
+.p-right input[type=file]::-webkit-file-upload-button {
+    background: #1781a5;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 2px;
+  }
+ 
+canvas {
+    width: 100% !important;
+    height: 200px !important;
+}
+.p-right .card {
+    padding: 15px !important;
+    box-shadow: 0 2px 5px 0px grey;
+    border: none;
+    margin-bottom: 15px;
+}
+.price-display.reduced span.regular-price {
+    text-decoration: line-through;
+    margin-right: 7px;
+}
+.checkout {
+    text-align: right;
+}
+.checkout-btn{
+    background: #AED227;
+    color: white;
+    font-size: 20px;
+    margin-left: auto;
+    padding: 10px 20px;
+}
+#puzzle-select-btn{
+position: relative;
+}
+#puzzle-select-btn::after{
+    content:"^";
+    position: absolute;
+    right: 0;
+    top:50%;
+    width: 10px;
+    height: 10px;
+    font-weight: bold;
+    transform: rotate(180deg);
 }
